@@ -82,6 +82,9 @@ class Home extends StatelessWidget {
                     ),
                   )
                 ],
+                backgroundColor: Colors.yellow,
+                pageBarBackgroundColor: Colors.grey.withOpacity(0.4),
+                pageBarProgressColor: Colors.grey.withOpacity(0.8),
                 onStoryShow: (s) {
                   print("Showing a story");
                 },
@@ -186,6 +189,9 @@ class _MoreStoriesState extends State<MoreStories> {
             controller: storyController,
           ),
         ],
+        backgroundColor: Colors.yellow,
+        pageBarBackgroundColor: Colors.grey.withOpacity(0.4),
+        pageBarProgressColor: Colors.grey.withOpacity(0.8),
         onStoryShow: (s) {
           print("Showing a story");
         },
