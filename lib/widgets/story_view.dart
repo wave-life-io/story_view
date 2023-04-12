@@ -766,11 +766,7 @@ class PageBarState extends State<PageBar> {
             padding: EdgeInsets.only(
                 right: widget.pages.last == it ? 0 : this.spacing),
             child: StoryProgressIndicator(
-              it.shown
-                  ? 1
-                  : it.isShowing
-                      ? 0.5
-                      : 0,
+              it.shown || it.isShowing ? 1 : 0,
               indicatorHeight:
                   widget.indicatorHeight == IndicatorHeight.large ? 5 : 3,
               pageBarBackgroundColor: widget.pageBarBackgroundColor,
